@@ -1,28 +1,22 @@
-async function pokemon(n, c) {
+async function pokemon(n, c, url) {
   for(i = n; i <= c ; i++){
     const data = await fetch(`https://pokeapi.co/api/v2/pokemon/${i}`)
     const dataJson = await data.json()
     
     const box = document.createElement("div");
     const img = document.createElement("img");
-    const boxImg = document.createElement("div")
-    
-    boxImg.id = "boxImg"
-    
-    boxImg.appendChild(img)
     
     img.id = `img${i}`
-    img.src = dataJson.sprites.front_default
+    img.src = `${url}${i}.png`
     
     document.getElementById("container")
       .appendChild(box).id = `${i}`
     
     document.getElementById(`${i}`)
-      .appendChild(boxImg).setAttribute("onclick", `changeImage(${i})`)
-      
+      .appendChild(img).setAttribute("onclick", `changeImage(${i})`)
+
   pokeName(dataJson, box)
   pokeStatus(dataJson, i)
-  moves(dataJson, i)
   }
 }
 
@@ -57,10 +51,16 @@ function changeImage(id) {
   const img = document.getElementById(`img${id}`)
   const url = `https://raw.githubusercontent.com/PokeAPI/sprites/master/sprites/pokemon/back/${id}.png`
 
+  if(img.src === `https://raw.githubusercontent.com/PokeAPI/sprites/master/sprites/pokemon/shiny/${id}.png`){
+    return img.src = `https://raw.githubusercontent.com/PokeAPI/sprites/master/sprites/pokemon/back/shiny/${id}.png`
+  } else if(img.src === `https://raw.githubusercontent.com/PokeAPI/sprites/master/sprites/pokemon/back/shiny/${id}.png`) {
+    return img.src = `https://raw.githubusercontent.com/PokeAPI/sprites/master/sprites/pokemon/shiny/${id}.png`
+  }
+
   if(img.src !== url){
-    img.src = url
+    return img.src = url
   } else {
-    img.src = `https://raw.githubusercontent.com/PokeAPI/sprites/master/sprites/pokemon/${id}.png`
+    return img.src = `https://raw.githubusercontent.com/PokeAPI/sprites/master/sprites/pokemon/${id}.png`
   }
 }
 
@@ -89,4 +89,16 @@ function pokeStatus(data, id) {
   
   document.getElementById(`${id}`)
     .appendChild(div)
+}
+
+function changeShyne(n, c, url){
+  for(i = n; i < c; i++){
+    document.getElementById(`img${i}`).src = `${url}${i}.png`
+  }
+}
+
+function changeDefault(n ,c ,url) {
+  for(i = n; i < c; i++){
+    document.getElementById(`img${i}`).src = `${url}${i}.png`
+  }
 }

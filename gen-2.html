@@ -8,7 +8,7 @@
     <title>Pokédex</title>
     <script src="script.js"></script>
 </head>
-<body onload="pokemon(152, 251)">
+<body onload="pokemon(152, 251, 'https://raw.githubusercontent.com/PokeAPI/sprites/master/sprites/pokemon/')">
   <header>
     <h1>Second generation pokemon</h1>
     
@@ -17,6 +17,11 @@
       <button type="submit" id="selectBtn">Gen-2</button>
       <button type="submit"><a href="./gen-3.html">Gen-3</a></button>
     </section>
+    
+    <div id="boxButton">
+      <button onclick="changeShyne(152,251, 'https://raw.githubusercontent.com/PokeAPI/sprites/master/sprites/pokemon/shiny/')">Shyne</button>
+      <button onclick="changeDefault(152,251, 'https://raw.githubusercontent.com/PokeAPI/sprites/master/sprites/pokemon/')">Default</button>
+    </div>
   </header>
   <main id="container">
 

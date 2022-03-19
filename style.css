@@ -12,6 +12,7 @@ body {
 #container {
   display:flex;
   justify-content: center;
+  align-items: center;
   gap: 10px;
   flex-wrap: wrap;
   width:  100%;
@@ -47,6 +48,23 @@ button {
   width: 100px;
 }
 
+#boxButton {
+  display: flex;
+  flex-direction: row;
+  gap: 20px;
+  border: none;
+  height: 100px;
+  width: 100%;
+}
+
+button:hover{
+  opacity: .8;
+}
+
+button:active{
+  opacity: .6;
+}
+
 a {
   text-decoration: none;
   color: purple;
@@ -69,7 +87,6 @@ div {
   align-items: center;
   flex-direction: column;
   width: 300px;
-  height: 340px;
   gap: 5px;
   border-radius: 5px;
   border: 1px solid black;
@@ -84,7 +101,6 @@ div:nth-child(1n) {
 
 img {
   width: 150px;
-  z-index: 1;
 }
 
 img:active {
@@ -93,21 +109,11 @@ img:active {
 
 @keyframes jump {
   from{
-    margin: 0;
+    padding: 0;
   }
   to{
-    margin-bottom: 15px;
+    padding: 15px;
   }
-}
-
-#boxImg {
-  margin-top: 50px;
-  margin-bottom: 15px;
-  border-radius: 50%;
-  width: 90px;
-  height: 90px;
-  background-color: rgba(0,0,0, .070);
-  border: none;
 }
 
 h2 {
@@ -236,6 +242,16 @@ p {
 #normal {
 	background: rgb(114,116,104);
   background: radial-gradient(circle, rgba(114,116,104,1) 0%, rgba(125,122,122,1) 100%);
+}
+
+#dark {
+  background: rgb(46,32,10);
+  background: radial-gradient(circle, rgba(46,32,10,1) 0%, rgba(30,26,26,1) 100%);
+}
+
+#ghost {
+  background: rgb(71,6,126);
+  background: radial-gradient(circle, rgba(71,6,126,1) 0%, rgba(30,2,50,1) 100%);
 }
 
 footer {
