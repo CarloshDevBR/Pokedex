@@ -1,5 +1,5 @@
-async function pokemon() {
-  for(i = 1 ; i <= 150 ; i++){
+async function pokemon(n, c) {
+  for(i = n; i <= c ; i++){
     const data = await fetch(`https://pokeapi.co/api/v2/pokemon/${i}`)
     const dataJson = await data.json()
     
@@ -18,13 +18,11 @@ async function pokemon() {
       .appendChild(box).id = `${i}`
     
     document.getElementById(`${i}`)
-      .classList.add(`${dataJson.types[0].type.name}`)
-      
-    document.getElementById(`${i}`)
       .appendChild(boxImg).setAttribute("onclick", `changeImage(${i})`)
       
   pokeName(dataJson, box)
   pokeStatus(dataJson, i)
+  moves(dataJson, i)
   }
 }
 
@@ -34,11 +32,14 @@ function pokeName(data, box) {
   
   const H1 = document.createElement("h2")
   const type = document.createElement("p")
+  type.id = `${data.types[0].type.name}`
   const typeTwo = document.createElement("p")
   
   H1.innerHTML = `${data.id}: ${data.name}`
   
   if(data.types[0] && data.types[1]){
+    typeTwo.id = `${data.types[1].type.name}`
+    
     type.innerHTML = `${data.types[0].type.name}`
     typeTwo.innerHTML =  ` ${data.types[1].type.name}`
     
@@ -65,6 +66,7 @@ function changeImage(id) {
 
 function pokeStatus(data, id) {
   const div = document.createElement("div")
+  
   const attack = document.createElement("p")
   const hp = document.createElement("p")
   const defense = document.createElement("p")
@@ -88,4 +90,3 @@ function pokeStatus(data, id) {
   document.getElementById(`${id}`)
     .appendChild(div)
 }
-
