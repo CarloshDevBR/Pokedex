@@ -11,6 +11,9 @@ pages for each pokemon where it will display more information about it, and etc.
   <img src="https://user-images.githubusercontent.com/92805039/159189776-932096e8-0e4f-4061-ae99-8d71867c5027.gif" alt="funk-pokemon" />
 </p>
 
+<br>
+<br>
+
 #### First some facts about me
 - first pokemon
 - favorite pokemon
@@ -27,13 +30,13 @@ pages for each pokemon where it will display more information about it, and etc.
 
 ### Demo 👀
 <p align="center">
-  <img src="https://user-images.githubusercontent.com/92805039/159341188-ce2948da-b1d8-4aad-9fd0-ec7627da2c96.gif" alt="gif-demo" />
+  <img src="https://user-images.githubusercontent.com/92805039/159341188-ce2948da-b1d8-4aad-9fd0-ec7627da2c96.gif" alt="gif-demo" width="250" height="250" />
 </p>
 
 #### Features 🚀
 - [x] API call
-- [] Search bar
-- [] Single page
+- [..] Search bar
+- [..] Single page
 
 <br>
 
