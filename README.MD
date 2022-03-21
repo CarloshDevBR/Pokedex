@@ -37,5 +37,18 @@ pages for each pokemon where it will display more information about it, and etc.
 
 <br>
 
+### 🎲running the front end
+```bash
+# clone this repository
+$ git clone <https://github.com/CarloshDevBR/Pokedex>
+# access the project through the terminal/cmd
+$ cd Pokedex
+#run the project
+$ yarn or npm
+#the server will initialize in the <http://localhost:3000>
+```
+
 ### bye bye!💜
 ![pokemon-wink](https://user-images.githubusercontent.com/92805039/159189215-aa68dcd0-564f-41ae-8cce-1f4568c6364b.gif)
+
+<h5 align="center">Made with love by CarloshDevBR</h5>
