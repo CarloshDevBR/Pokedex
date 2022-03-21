@@ -21,6 +21,8 @@ pages for each pokemon where it will display more information about it, and etc.
 #### here 😎 ↓
 ![bulbasaur-pokemon](https://user-images.githubusercontent.com/92805039/159189545-bf898254-8044-4d6e-af3b-ccdf62603d6d.gif)
 
+<br>
+
 ### technologies used 🛠
 - html
 - css
@@ -53,7 +55,9 @@ $ open with live server extension
 
 <br>
 
-### bye bye!💜
-![pokemon-wink](https://user-images.githubusercontent.com/92805039/159189215-aa68dcd0-564f-41ae-8cce-1f4568c6364b.gif)
+<h3 align="center">bye bye!💜</h3>
+<p align="center">
+  <img src="https://user-images.githubusercontent.com/92805039/159189215-aa68dcd0-564f-41ae-8cce-1f4568c6364b.gif" alt="gengar" />
+</p>
 
 <h5 align="center">Made with love by CarloshDevBR</h5>
