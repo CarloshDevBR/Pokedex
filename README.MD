@@ -51,6 +51,8 @@ $ yarn or npm
 #the server will initialize in the <http://localhost:3000>
 ```
 
+<br>
+
 ### bye bye!💜
 ![pokemon-wink](https://user-images.githubusercontent.com/92805039/159189215-aa68dcd0-564f-41ae-8cce-1f4568c6364b.gif)
 
