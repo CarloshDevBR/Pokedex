@@ -1,3 +1,5 @@
+### Linguage: PT-BR
+
 <h1 align="center">Pokédex</h1>
 
 <p align="center" >Do you like pokemon? You will like this project is a list (Pokédex) of pokemon where you can see the status and sprites.
