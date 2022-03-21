@@ -30,7 +30,7 @@ pages for each pokemon where it will display more information about it, and etc.
 
 ### Demo 👀
 <p align="center">
-  <img src="https://user-images.githubusercontent.com/92805039/159341188-ce2948da-b1d8-4aad-9fd0-ec7627da2c96.gif" alt="gif-demo" width="250" height="250" />
+  <img src="https://user-images.githubusercontent.com/92805039/159341188-ce2948da-b1d8-4aad-9fd0-ec7627da2c96.gif" alt="gif-demo" />
 </p>
 
 #### Features 🚀
